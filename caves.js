@@ -48,7 +48,7 @@ Level.setTile(emoreX,emoreY+=1,emoreZ,emoreID,emoreDAMAGE);
 
 			}
 
-for(var i = 0; i < 1000; i++){
+/*for(var i = 0; i < 1000; i++){
 
 		 var dioreX = Math.floor((Math.random() * 256) + 1);
 			var dioreY = Math.floor((Math.random() * 45) + 1);
@@ -62,7 +62,7 @@ Level.setTile(dioreX,dioreY-=1,dioreZ,dioreID,dioreDAMAGE);
 Level.setTile(dioreX+=1,dioreY,dioreZ,dioreID,dioreDAMAGE);
 Level.setTile(dioreX,dioreY+=1,dioreZ,dioreID,dioreDAMAGE);
 
-			}
+			}*/
 
 for(var i = 0; i < 200; i++){
 		 var surcaveX = Math.floor((Math.random() * 256) + 1);
