@@ -1,8 +1,10 @@
 var emoreID = 191;
-var rubyoreID = 192;
-var petrolID = 193;
+//var rubyoreID = 192;
+//var petrolID = 193;
+var dioreID = 192;
 var emoreDAMAGE = 0;
 var rubyoreDAMAGE = 0;
+var dioreDAMAGE = 0;
 var petrolDAMAGE = 0;
 var caveID = 0;
 var surcaveID = 0;
@@ -16,6 +18,9 @@ ModPE.setItem(426, "emerald", 0, "Emerald");
 
 
 Block.defineBlock(191,"Emerald Ore",["emerald_ore",0],1,false,0);
+
+Block.defineBlock(192,"Diamond Ore",["diamond_ore",0],1,false,0);
+
 //Block.defineBlock(192,"Ruby Ore",["quartz_ore",0],1,false,0);
 //Block.defineBlock(193,"Petroleum",["wool",15],1,false,4);
 
@@ -40,6 +45,22 @@ Level.setTile(emoreX,emoreY,emoreZ+=1,emoreID,emoreDAMAGE);
 Level.setTile(emoreX,emoreY-=1,emoreZ,emoreID,emoreDAMAGE);
 Level.setTile(emoreX+=1,emoreY,emoreZ,emoreID,emoreDAMAGE);
 Level.setTile(emoreX,emoreY+=1,emoreZ,emoreID,emoreDAMAGE);
+
+			}
+
+for(var i = 0; i < 1000; i++){
+
+		 var dioreX = Math.floor((Math.random() * 256) + 1);
+			var dioreY = Math.floor((Math.random() * 45) + 1);
+			var dioreZ = Math.floor((Math.random() * 256) + 1);
+			Level.setTile(dioreX,dioreY,dioreZ,dioreID,dioreDAMAGE);
+Level.setTile(dioreX+=1,dioreY,dioreZ,dioreID,dioreDAMAGE);
+Level.setTile(dioreX,dioreY+=1,dioreZ,dioreID,dioreDAMAGE);
+Level.setTile(dioreX-=1,dioreY,dioreZ,dioreID,dioreDAMAGE);
+Level.setTile(dioreX,dioreY,dioreZ+=1,dioreID,dioreDAMAGE);
+Level.setTile(dioreX,dioreY-=1,dioreZ,dioreID,dioreDAMAGE);
+Level.setTile(dioreX+=1,dioreY,dioreZ,dioreID,dioreDAMAGE);
+Level.setTile(dioreX,dioreY+=1,dioreZ,dioreID,dioreDAMAGE);
 
 			}
 
@@ -832,11 +853,22 @@ Level.setTile(caveX,caveY+=1,caveZ,caveID,caveDAMAGE);
 
 function destroyBlock(x, y, z, side){
 
+var shouldDropItem = false;
 
 if(getTile(x, y, z) == 23){
 
 
 Level.dropItem(x, y, z, 0, 426, 1, 0);
+Level.destroyBlock(x, y, z, shouldDropItem);
+
+
+}
+
+if(getTile(x, y, z) == 192){
+
+
+Level.dropItem(x, y, z, 0, 264, 1, 0);
+Level.destroyBlock(x, y, z, shouldDropItem);
 
 
 }
