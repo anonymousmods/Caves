@@ -430,7 +430,7 @@ Level.setTile(surcaveX,surcaveY+=1,surcaveZ,surcaveID,surcaveDAMAGE);
 			}
 
 
-for(var i = 0; i < 300; i++){
+for(var i = 0; i < 100; i++){
 
 		 var dungeonX = Math.floor((Math.random() * 256) + 1);
 			var dungeonY = Math.floor((Math.random() * 50) + 1);
@@ -793,6 +793,16 @@ if(getTile(caveX, caveY-1, caveZ) != 0){
 
 Level.setTile(dungeonX, dungeonY-=1, dungeonZ+=1, 54, 4);
 
+asd = Math.random(
+
+Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 0, 264, 0, 20);
+Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 1, 388, 0, 10);
+Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 2, 325, 0, 1);
+Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 3, 331, 0, 3);
+Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 4, 348, 0, 8);
+Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 5, 383, 12, 2);
+
+
 }
 
 
@@ -1100,7 +1110,10 @@ Level.setTile(caveX,caveY-2,caveZ+1,lavaID,caveDAMAGE);
 Level.setTile(caveX+1,caveY-2,caveZ+1,lavaID,caveDAMAGE);
 
 Level.setTile(caveX-2, caveY-1, caveZ-3, 54, 10);
-Level.setChestSlot(caveX, caveY, caveZ, 1, 264, 10);
+
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 5, 264, 0, 3);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 0, 302, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 257, 5, 3);
 
 }
 
@@ -1241,7 +1254,7 @@ function destroyBlock(x, y, z, side){
 if(getTile(x, y, z) == 191){
 
 
-Level.dropItem(x, y, z, 0, 426, 1, 0);
+Level.dropItem(x, y, z, 0, 388, 1, 0);
 Level.destroyBlock(x, y, z, false);
 
 
