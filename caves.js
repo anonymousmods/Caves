@@ -794,7 +794,7 @@ Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
 
 Level.setTile(dungeonX-2, dungeonY-1, dungeonZ-3, dungeonchest, 10);
 
-var asd = Math.floor((Math.random() * 2) + 1);
+var asd = Math.floor((Math.random() * 4) + 1);
 
 if(asd == 1){
 
@@ -821,7 +821,29 @@ Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 9, 296, 5, 5);
 
 }
 
+if(asd == 3){
 
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 5, 264, 0, 4);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 0, 313, 2, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 4, 361, 12, 3);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 8, 348, 5, 12);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 14, 393, 5, 7);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 11, 310, 5, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 9, 292, 5, 1);
+
+}
+
+if(asd == 4){
+
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 5, 276, 0, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 0, 313, 2, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 4, 260, 12, 3);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 8, 347, 5, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 14, 354, 0, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 11, 311, 5, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 9, 289, 5, 16);
+
+}
 
 
 			}
@@ -1129,12 +1151,47 @@ Level.setTile(caveX+1,caveY-2,caveZ+1,lavaID,caveDAMAGE);
 
 Level.setTile(caveX-2, caveY-1, caveZ-3, cavechest, 10);
 
+var sdf = Math.floor((Math.random() * 4) + 1);
+
+if(sdf == 1){
+
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 5, 264, 0, 3);
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 0, 302, 0, 1);
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 1, 307, 0, 1);
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 257, 5, 1);
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 11, 345, 5, 1);
 
+}
+
+if(sdf == 2){
+
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 5, 293, 0, 3);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 0, 309, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 1, 307, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 260, 5, 7);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 11, 15, 5, 13);
+
+}
+
+if(sdf == 3){
+
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 5, 262, 0, 19);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 0, 261, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 1, 307, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 274, 5, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 11, 347, 5, 1);
+
+}
+
+if(sdf == 4){
+
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 5, 314, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 0, 267, 90, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 1, 309, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 297, 5, 3);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 11, 318, 5, 7);
+
+}
 
 }
 
@@ -1283,5 +1340,3 @@ Level.destroyBlock(x, y, z, false);
 
 
 }
-
-
