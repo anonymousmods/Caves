@@ -794,10 +794,33 @@ Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
 
 Level.setTile(dungeonX-2, dungeonY-1, dungeonZ-3, dungeonchest, 10);
 
-Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 5, 264, 0, 3);
-Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 0, 302, 0, 1);
-Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 1, 303, 0, 1);
-Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 9, 257, 5, 1);
+var asd = Math.floor((Math.random() * 2) + 1);
+
+if(asd == 1){
+
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 5, 264, 0, 7);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 0, 311, 2, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 4, 383, 12, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 8, 325, 5, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 14, 260, 5, 31);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 11, 310, 5, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 9, 331, 5, 3);
+
+
+}
+
+if(asd == 2){
+
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 5, 264, 0, 7);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 0, 312, 2, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 4, 458, 12, 3);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 8, 345, 5, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 14, 297, 5, 11);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 11, 310, 5, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 9, 296, 5, 5);
+
+}
+
 
 
 
@@ -1108,8 +1131,10 @@ Level.setTile(caveX-2, caveY-1, caveZ-3, cavechest, 10);
 
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 5, 264, 0, 3);
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 0, 302, 0, 1);
-Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 1, 303, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 1, 307, 0, 1);
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 257, 5, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 11, 345, 5, 1);
+
 
 }
 
@@ -1258,4 +1283,5 @@ Level.destroyBlock(x, y, z, false);
 
 
 }
+
 
