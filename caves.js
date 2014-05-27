@@ -1332,7 +1332,7 @@ function destroyBlock(x, y, z, side){
 if(getTile(x, y, z) == 191){
 
 
-Level.dropItem(x, y, z, 0, 388, 1, 0);
+Level.dropItem(x, y, z, 0, 426, 1, 0);
 Level.destroyBlock(x, y, z, false);
 
 
