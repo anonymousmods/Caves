@@ -6,8 +6,10 @@ var emoreDAMAGE = 0;
 var rubyoreDAMAGE = 0;
 var dioreDAMAGE = 0;
 var petrolDAMAGE = 0;
+var dungeonDAMAGE = 0;
 var caveID = 0;
 var surcaveID = 0;
+var dungeonID = 0;
 var lavaID = 11;
 var caveDAMAGE = 0;
 var surcaveDAMAGE = 0;
@@ -428,11 +430,380 @@ Level.setTile(surcaveX,surcaveY+=1,surcaveZ,surcaveID,surcaveDAMAGE);
 			}
 
 
-for(var i = 0; i < 400; i++){
+for(var i = 0; i < 300; i++){
+
+		 var dungeonX = Math.floor((Math.random() * 256) + 1);
+			var dungeonY = Math.floor((Math.random() * 50) + 1);
+			var dungeonZ = Math.floor((Math.random() * 256) + 1);
+
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE); 
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE); 
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE); 
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+			Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ-=1,dungeonID,dungeonDAMAGE);
+
+Level.setTile(dungeonX,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX-=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY,dungeonZ+=1,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY-=1,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
+Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
+
+
+if(getTile(caveX, caveY-1, caveZ) != 0){
+
+Level.setTile(dungeonX, dungeonY-=1, dungeonZ+=1, 54, 4);
+
+}
+
+
+			}
+
+
+for(var i = 0; i < 300; i++){
 		 var caveX = Math.floor((Math.random() * 256) + 1);
 			var caveY = Math.floor((Math.random() * 50) + 1);
 			var caveZ = Math.floor((Math.random() * 256) + 1);
-			 
+
 if(Level.getTile(Math.floor((Math.random() * 256) +1), Math.floor((Math.random() * 120) +1), Math.floor((Math.random() * 256) +1))!=10){
 
 
@@ -728,7 +1099,11 @@ Level.setTile(caveX+1,caveY-2,caveZ,lavaID,caveDAMAGE);
 Level.setTile(caveX,caveY-2,caveZ+1,lavaID,caveDAMAGE);
 Level.setTile(caveX+1,caveY-2,caveZ+1,lavaID,caveDAMAGE);
 
+Level.setTile(caveX-2, caveY-1, caveZ-3, 54, 10);
+Level.setChestSlot(caveX, caveY, caveZ, 1, 264, 10);
+
 }
+
 
 Level.setTile(caveX,caveY,caveZ,caveID,caveDAMAGE);
 Level.setTile(caveX+=1,caveY,caveZ,caveID,caveDAMAGE);
@@ -855,9 +1230,10 @@ Level.setTile(caveX,caveY+=1,caveZ,caveID,caveDAMAGE);
 
 }
 
-			}
+}
 
 }
+
 
 function destroyBlock(x, y, z, side){
 
@@ -873,4 +1249,5 @@ Level.destroyBlock(x, y, z, false);
 
 
 }
+
 
