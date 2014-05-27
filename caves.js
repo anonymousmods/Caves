@@ -13,6 +13,8 @@ var dungeonID = 0;
 var lavaID = 11;
 var caveDAMAGE = 0;
 var surcaveDAMAGE = 0;
+var cavechest = 54;
+var dungeonchest = 54;
 var blocks = 10;
 var deltaX = Math.sin(Math.random() * 256)*blocks;
 var deltaZ = Math.cos(Math.random() * 256)*blocks;
@@ -430,7 +432,7 @@ Level.setTile(surcaveX,surcaveY+=1,surcaveZ,surcaveID,surcaveDAMAGE);
 			}
 
 
-for(var i = 0; i < 100; i++){
+for(var i = 0; i < 200; i++){
 
 		 var dungeonX = Math.floor((Math.random() * 256) + 1);
 			var dungeonY = Math.floor((Math.random() * 50) + 1);
@@ -789,25 +791,20 @@ Level.setTile(dungeonX+=1,dungeonY,dungeonZ,dungeonID,dungeonDAMAGE);
 Level.setTile(dungeonX,dungeonY+=1,dungeonZ,dungeonID,dungeonDAMAGE);
 
 
-if(getTile(caveX, caveY-1, caveZ) != 0){
 
-Level.setTile(dungeonX, dungeonY-=1, dungeonZ+=1, 54, 4);
+Level.setTile(dungeonX-2, dungeonY-1, dungeonZ-3, dungeonchest, 10);
 
-Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 0, 264, 0, 20);
-Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 1, 388, 0, 10);
-Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 2, 325, 0, 1);
-Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 3, 331, 0, 3);
-Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 4, 348, 0, 8);
-Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 5, 383, 12, 2);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 5, 264, 0, 3);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 0, 302, 0, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 1, 303, 0, 1);
+Level.setChestSlot(dungeonX-2, dungeonY-1, dungeonZ-3, 9, 257, 5, 1);
 
-
-}
 
 
 			}
 
 
-for(var i = 0; i < 300; i++){
+for(var i = 0; i < 200; i++){
 		 var caveX = Math.floor((Math.random() * 256) + 1);
 			var caveY = Math.floor((Math.random() * 50) + 1);
 			var caveZ = Math.floor((Math.random() * 256) + 1);
@@ -1107,11 +1104,12 @@ Level.setTile(caveX+1,caveY-2,caveZ,lavaID,caveDAMAGE);
 Level.setTile(caveX,caveY-2,caveZ+1,lavaID,caveDAMAGE);
 Level.setTile(caveX+1,caveY-2,caveZ+1,lavaID,caveDAMAGE);
 
-Level.setTile(caveX-2, caveY-1, caveZ-3, 54, 10);
+Level.setTile(caveX-2, caveY-1, caveZ-3, cavechest, 10);
 
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 5, 264, 0, 3);
 Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 0, 302, 0, 1);
-Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 257, 5, 3);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 1, 303, 0, 1);
+Level.setChestSlot(caveX-2, caveY-1, caveZ-3, 9, 257, 5, 1);
 
 }
 
