@@ -793,8 +793,6 @@ if(getTile(caveX, caveY-1, caveZ) != 0){
 
 Level.setTile(dungeonX, dungeonY-=1, dungeonZ+=1, 54, 4);
 
-asd = Math.random(
-
 Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 0, 264, 0, 20);
 Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 1, 388, 0, 10);
 Level.setChestSlot(dungeonX, dungeonY-=1, dungeonZ+=1, 2, 325, 0, 1);
